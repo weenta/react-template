@@ -1,11 +1,12 @@
 {
-  "name": "00react_template",
+  "name": "{{name}}",
+  "description": "{{description}}",
+  "repository": "git://github.com/{{repository}}.git",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "main": "lib/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "2.x"
+  }
 }
