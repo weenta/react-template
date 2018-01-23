@@ -1,6 +1,6 @@
 {
-  "name": "{{name}}",
-  "description": "{{description}}",
+  "name": "react_template",
+  "description": "",
   "repository": "git://github.com/{{repository}}.git",
   "version": "1.0.0",
   "license": "MIT",
