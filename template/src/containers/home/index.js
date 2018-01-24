@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import './style'
 
 export default class Home extends Component {
     render() {
         return (
-            <div>
-                <h2>welcome home</h2>
+            <div className='home'>
+                <h2>welcome</h2>
             </div>
         )
     }

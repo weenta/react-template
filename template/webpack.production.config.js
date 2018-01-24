@@ -29,6 +29,24 @@ module.exports = {
                     fallback: "style-loader",
                     use: ['css-loader', 'less-loader']
                 })
+            },
+            {
+                test: /\.(png|gif|jpg|jpeg|bmp)$/,
+                use: {
+                    loader: 'url-loader',
+                    options: {
+                        limit: 5000
+                    }
+                }
+            },
+            {
+                test: /\.(png|woff|woff2|svg|ttf|eot)($|\?)/,
+                use: {
+                    loader: 'url-loader',
+                    options: {
+                        limit: 5000
+                    }
+                }
             }
         ]
     },
@@ -41,7 +59,7 @@ module.exports = {
         }),
 
         new webpack.HotModuleReplacementPlugin(),
-        new ExtractTextPlugin("styles.css"),
+        new ExtractTextPlugin("style.css"),
     ],
 
     resolve: {
