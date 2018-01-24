@@ -6,10 +6,8 @@ import { createStore } from 'redux';
 
 import './assets/css/reset.css'
 
-import rootReducers from '@/reducers/rootReducers'
-const store = createStore(
-    rootReducers
-)
+import rootReducer from '@/reducers/rootReducer'
+const store = createStore(rootReducer)
 
 import RouterMap from './router/routerMap'
 render(
