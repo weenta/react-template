@@ -5,7 +5,7 @@ export default class Home extends Component {
     render() {
         return (
             <div className='home'>
-                <h2>welcome</h2>
+                <h2>welcome to project: {{ name }}</h2>
             </div>
         )
     }
